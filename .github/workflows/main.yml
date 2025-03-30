@@ -48,6 +48,7 @@ jobs:
           haxelib install actuate
           haxelib install hxCodec 2.5.1
           haxelib install hscript
+          haxelib git linc_luajit https://github.com/mcagabe19/linc_luajit-rewriten.git
           haxelib git lime https://github.com/mcagabe19-stuff/lime
       - name: Compile (Windows)
         if: startsWith(matrix.os, 'windows')
